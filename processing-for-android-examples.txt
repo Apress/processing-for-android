@@ -1,0 +1,11 @@
+name=Processing for Android, 1st Edition
+category=Android
+authors=[Andres Colubri](http://andrescolubri.net/)
+url=http://p5android-book.andrescolubri.net/
+sentence=Code examples of the book "Processing for Android: Create Mobile, Sensor-Aware, and VR Applications Using Processing" (Apress, 2017).
+paragraph=
+version=1
+prettyVersion=1.0
+lastUpdated=0
+minRevision=0
+maxRevision=0
