@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="net.andrescolubri.image_flow">
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="26"/>
+    <uses-feature android:name="android.software.live_wallpaper"/>
+    <application android:icon="@drawable/icon" android:label="Image Flow">
+        <service android:label="Image Flow" android:name=".MainService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"/>
+        </service>
+        <activity android:name="processing.android.PermissionRequestor"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+</manifest>
